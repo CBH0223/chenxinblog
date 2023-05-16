@@ -1,0 +1,230 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="generator" content="Hugo 0.111.3">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>CBH</title>
+    <meta name="description"
+        content="My site description">
+    <link rel="canonical" href="https://juicebar-demo.add1.dev/" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+    
+    <link rel="stylesheet" href="https://juicebar-demo.add1.dev/scss/style.min.d6341f25b6d8ae42bfd0057381190ef7cef03c7dc8842acc90df936fdde824d7.css">
+
+    <meta property="og:title" content="CBH" />
+<meta property="og:description" content="My site description" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://juicebar-demo.add1.dev/" /><meta property="og:site_name" content="Chen Xin" />
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="CBH"/>
+<meta name="twitter:description" content="My site description"/>
+
+    
+    
+    
+
+</head><body><nav class="navbar is-light" role="navigation">
+    <div class="container">
+        <div class="navbar-brand">
+            <a href="/" title="home" class="navbar-item">
+                <span class="logo">
+                    <h1>CBH</h1>
+                </span>
+            </a>
+
+            
+            <a id="theme-toggle" class="theme-toggle" href="#">
+                <img src="https://juicebar-demo.add1.dev/svg/sun.svg" alt="sun icon" class="theme-icon" />
+            </a>
+
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div class="navbar-menu">
+            <div class="navbar-start">
+                
+                <a href="/about" class="navbar-item">1.简历</a>
+                
+                <a href="/post" class="navbar-item">2.研习（时间）</a>
+                
+                <a href="/categories" class="navbar-item">3.研习（类别）</a>
+                
+            </div>
+
+        </div>
+        <div class="search">
+            <div id="fastSearch">
+                <input id="searchInput" tabindex="0" placeholder="Search..">
+                <ul id="searchResults">
+
+                </ul>
+            </div>
+            <a id="search-btn" style="display: inline-block;" href="# ">
+                <div class="icon-search"><svg class="search-svg" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></div>
+            </a>
+        </div>
+
+        <script src="/js/fuse.min.js"></script> 
+        <script src="/js/fastsearch.js"></script>
+
+    </div>
+</nav>
+
+<script>
+    
+    document.addEventListener('DOMContentLoaded', function() {
+        var burger = document.querySelector('.navbar-burger');
+        burger.addEventListener('click', function() {
+            burger.classList.toggle('is-active');
+            document.querySelector('.navbar-menu').classList.toggle('is-active');
+        });
+    });
+
+    
+    function setTheme(theme) {
+        let body = document.body;
+        let themeIcon = document.querySelector(".theme-icon");
+        if (theme === "dark") {
+            body.classList.add("dark-mode");
+            themeIcon.src = "https:\/\/juicebar-demo.add1.dev\/svg/moon.svg";
+            themeIcon.alt = "moon icon";
+        } else {
+            body.classList.remove("dark-mode");
+            themeIcon.src = "https:\/\/juicebar-demo.add1.dev\/svg/sun.svg";
+            themeIcon.alt = "sun icon";
+        }
+        
+        localStorage.setItem("theme", theme);
+    }
+
+    
+    let theme = localStorage.getItem("theme") || "light";
+    const isDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    if (isDarkMode) {
+        
+        setTheme('dark');
+
+    } else {
+        
+        setTheme('light');
+    }
+    setTheme(theme);
+
+    
+    document.getElementById("theme-toggle").addEventListener("click", function() {
+        if (theme === "light") {
+            theme = "dark";
+        } else {
+            theme = "light";
+        }
+        setTheme(theme);
+    });
+
+
+
+</script>
+
+</header><main>
+<article>
+    <div class="is-centered">
+            <div class="title subtitle heading is-6">
+                <div id="home-box" >
+                            
+                            <div class="avatar-container">
+                                <img src="/images/my.jpg" class="author-avatar">
+
+                            </div>
+                            
+
+
+
+                        <h1 id="home-title" class="title is-1 ">Chen Xin</h1>
+                    <div class="description column content typewriter-effect">
+                        <div class="text" id="typewriter-text"> I&#39;m Chen Xin, nice to meet you(ˊ˘ˋ*)♡</div>
+
+                    </div>
+                    <script>
+                        const typeWriter = document.getElementById('typewriter-text');
+                        typeWriter.style.setProperty('--characters', typeWriter.innerHTML.length);
+                    </script>
+
+                    <div class="social-icon">
+
+                        
+                        <a href="https://github.com/CBH0223" title="Github"><span class="change-color icon">
+                                <svg height="32px" width="32px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path
+        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+    </path>
+</svg>
+                            </span></a>
+                        
+                        <a href="mailto:cx990223@126.com" title="email"><span class="change-color icon">
+                                <svg height="32px" width="32px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 21" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+    <polyline points="22,6 12,13 2,6"></polyline>
+</svg>
+                            </span></a>
+                        
+
+                    </div>
+
+                </div>
+            </div>
+
+    </div></article>
+<div class="summary">
+    
+        <article class="post">
+  <div class="single-container column is-centered">
+    <div class="archive" id="post-container">
+      <header class="post-header">
+        <h1 class="post-title hover-underline-animation"><a class="post-link" href="/post/2023-05-16-/">相关系数矩阵图</a></h1>
+       
+       
+      </header>
+      <div class="post-content">
+        <div class="excerpt post-summary">
+          设置工作路径 #getwd() #setwd(&#34;[]:[]/[]/[]&#34;) 加载R包——corrplot #install.packages(&#34;corrplot&#34;)#下载corrplot library(corrplot) ## corrplot 0.92 loaded 导入数据 #导入数据——mtcars df &lt;- mtcars #df &lt;- read.table() #相关系数矩阵，即协方差计算——res为相关系数矩阵即可 res &lt;- cor(df) 绘制相关系数矩阵图——上正圆下数 corrplot(res, type = &#34;upper&#34;, order = &#34;AOE&#34;, tl.col = &#34;black&#34;,tl.srt=45, cex.main = 1, mar = c(2,2,3,2),tl.pos=&#34;d&#34;) #上三角 corrplot(res,add=TRUE, type=&#34;lower&#34;, method=&#34;number&#34;,order=&#34;AOE&#34;,diag=FALSE,tl.pos=&#34;n&#34;, cl.pos=&#34;n&#34;) 绘制相关系数矩阵图&ndash;上椭圆下数 corrplot(res,type = &#34;upper&#34;,method=&#34;ellipse&#34;,order=&#34;AOE&#34;,shade.col=NA,tl.col=&#34;black&#34;,tl.srt=45, cex.main = 1, mar = c(2,2,3,2),tl.pos=&#34;d&#34;) #椭圆 corrplot(res,add=TRUE, type=&#34;lower&#34;, method=&#34;number&#34;,order=&#34;AOE&#34;,diag=FALSE,tl.pos=&#34;n&#34;, cl.pos=&#34;n&#34;) 绘制相关系数矩阵图&ndash;上pie图下数 corrplot(res,type = &#34;upper&#34;,method=&#34;pie&#34;,order=&#34;AOE&#34;,shade.col=NA,tl.col=&#34;black&#34;,tl.srt=45, cex.main = 1, mar = c(2,2,3,2),tl.pos=&#34;d&#34;) #椭圆 corrplot(res,add=TRUE, type=&#34;lower&#34;, method=&#34;number&#34;,order=&#34;AOE&#34;,diag=FALSE,tl.
+        </div>
+        
+        <div class="post-time-container">
+          <span class="post-time"> 2023-05-16 </span>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</article>
+
+    
+    <hr>
+<section class="pagination" >
+    
+    <label class="pag-link">Page 1 of 1</label>
+    
+</section>
+
+</div>
+
+        </main><footer class="footer">
+    <div class="content has-text-centered">
+    <span>&copy; 2023 <a href="https://juicebar-demo.add1.dev/">CBH</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" target="_blank">Hugo</a> &
+        <a href="https://github.com/hotjuicew/hugo-JuiceBar" target="_blank">JuiceBar</a>
+    </span>
+    </div>
+  </footer></body>
+</html>
+

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>R on CBH</title>
+    <link>https://juicebar-demo.add1.dev/categories/r/</link>
+    <description>Recent content in R on CBH</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 16 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://juicebar-demo.add1.dev/categories/r/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>相关系数矩阵图</title>
+      <link>https://juicebar-demo.add1.dev/post/2023-05-16-/</link>
+      <pubDate>Tue, 16 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://juicebar-demo.add1.dev/post/2023-05-16-/</guid>
+      <description>设置工作路径 #getwd() #setwd(&amp;#34;[]:[]/[]/[]&amp;#34;) 加载R包——corrplot #install.packages(&amp;#34;corrplot&amp;#34;)#下载corrplot library(corrplot) ## corrplot 0.92 loaded 导入数据 #导入数据——mtcars df &amp;lt;- mtcars #df &amp;lt;- read.table() #相关系数矩阵，即协方差计算——res为相关系数矩阵即可 res &amp;lt;- cor(df) 绘制相关系数矩阵图——上正圆下数 corrplot(res, type = &amp;#34;upper&amp;#34;, order = &amp;#34;AOE&amp;#34;, tl.col = &amp;#34;black&amp;#34;,tl.srt=45, cex.main = 1, mar = c(2,2,3,2),tl.pos=&amp;#34;d&amp;#34;) #上三角 corrplot(res,add=TRUE, type=&amp;#34;lower&amp;#34;, method=&amp;#34;number&amp;#34;,order=&amp;#34;AOE&amp;#34;,diag=FALSE,tl.pos=&amp;#34;n&amp;#34;, cl.pos=&amp;#34;n&amp;#34;) 绘制相关系数矩阵图&amp;ndash;上椭圆下数 corrplot(res,type = &amp;#34;upper&amp;#34;,method=&amp;#34;ellipse&amp;#34;,order=&amp;#34;AOE&amp;#34;,shade.col=NA,tl.col=&amp;#34;black&amp;#34;,tl.srt=45, cex.main = 1, mar = c(2,2,3,2),tl.pos=&amp;#34;d&amp;#34;) #椭圆 corrplot(res,add=TRUE, type=&amp;#34;lower&amp;#34;, method=&amp;#34;number&amp;#34;,order=&amp;#34;AOE&amp;#34;,diag=FALSE,tl.pos=&amp;#34;n&amp;#34;, cl.pos=&amp;#34;n&amp;#34;) 绘制相关系数矩阵图&amp;ndash;上pie图下数 corrplot(res,type = &amp;#34;upper&amp;#34;,method=&amp;#34;pie&amp;#34;,order=&amp;#34;AOE&amp;#34;,shade.col=NA,tl.col=&amp;#34;black&amp;#34;,tl.srt=45, cex.main = 1, mar = c(2,2,3,2),tl.pos=&amp;#34;d&amp;#34;) #椭圆 corrplot(res,add=TRUE, type=&amp;#34;lower&amp;#34;, method=&amp;#34;number&amp;#34;,order=&amp;#34;AOE&amp;#34;,diag=FALSE,tl.</description>
+    </item>
+    
+  </channel>
+</rss>

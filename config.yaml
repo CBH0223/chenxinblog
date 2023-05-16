@@ -1,0 +1,43 @@
+baseURL: https://juicebar-demo.add1.dev/
+languageCode: en
+theme: hugo-JuiceBar
+title: CBH
+params:
+  Title: Chen Xin
+  author: Chen Xin
+  authorImage: /images/demo.jpeg
+  content: I'm Chen Xin, nice to meet you(ˊ˘ˋ*)♡
+  description: My site description
+  giscus:
+    category: Announcements
+    categoryID: DIC_kwDOHHQOu84CWCQ3
+    emitMetadata: '0'
+    inputPosition: bottom
+    lang: en
+    loading: lazy
+    mapping: og:title
+    reactionsEnabled: '1'
+    repo: Chen Xin/blog
+    repoID: R_kgDOHHQOuw
+  imageUrl: /images/my.jpg
+  paginate: 5
+  social:
+    - name: Github
+      url: https://github.com/CBH0223
+    - name: email
+      url: mailto:cx990223@126.com
+taxonomies:
+  category: categories
+menu:
+  main:
+    - name: 1.简历
+      url: /about
+    - name: 2.研习（时间）
+      url: /post
+    - name: 3.研习（类别）
+      url: /categories
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
